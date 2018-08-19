@@ -23,5 +23,6 @@ Route::get('nombre/{param}', function($param){
 Route::get('Controller', 'PruebaController@index');
 Route::get('name/{name}', 'PruebaController@MyName');
 
-Route::resource('Photo','PhotoController');
+Route::resource('Multimedia','MultimediaController');
 Route::resource('User', 'UserController');
+Route::resource('Publication', 'PublicationController');
