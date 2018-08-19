@@ -14,15 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('prueba', function(){
-    return 'Esta es una prueba';
-});
-Route::get('nombre/{param}', function($param){
-    return 'Usuario: '.$param;
-});
 Route::get('Controller', 'PruebaController@index');
 Route::get('name/{name}', 'PruebaController@MyName');
 
-Route::resource('Multimedia','MultimediaController');
-Route::resource('User', 'UserController');
-Route::resource('Publication', 'PublicationController');
+Route::resouce([
+    'Multimedia'    => 'MultimediaController',
+    'User'          => 'UserController',
+    'Publication'   => 'PublicationController']);
