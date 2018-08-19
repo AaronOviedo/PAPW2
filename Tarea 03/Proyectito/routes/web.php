@@ -20,3 +20,8 @@ Route::get('prueba', function(){
 Route::get('nombre/{param}', function($param){
     return 'Usuario: '.$param;
 });
+Route::get('Controller', 'PruebaController@index');
+Route::get('name/{name}', 'PruebaController@MyName');
+
+Route::resource('Photo','PhotoController');
+Route::resource('User', 'UserController');
