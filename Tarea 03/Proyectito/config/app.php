@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Pirategram'),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Monterrey',
 
     /*
     |--------------------------------------------------------------------------
@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Pirategram\Providers\AppServiceProvider::class,
+        Pirategram\Providers\AuthServiceProvider::class,
+        // Pirategram\Providers\BroadcastServiceProvider::class,
+        Pirategram\Providers\EventServiceProvider::class,
+        Pirategram\Providers\RouteServiceProvider::class,
 
     ],
 
