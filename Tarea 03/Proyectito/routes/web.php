@@ -17,7 +17,9 @@ Route::get('/', function () {
 Route::get('Controller', 'PruebaController@index');
 Route::get('name/{name}', 'PruebaController@MyName');
 
-Route::resouce([
+/*Route::resouce([
     'Multimedia'    => 'MultimediaController',
     'User'          => 'UserController',
-    'Publication'   => 'PublicationController']);
+    'Publication'   => 'PublicationController']);*/
+
+Route::resource('User', 'UserController');
