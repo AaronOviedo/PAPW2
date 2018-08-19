@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('prueba', function(){
+    return 'Esta es una prueba';
+});
+Route::get('nombre/{param}', function($param){
+    return 'Usuario: '.$param;
+});
